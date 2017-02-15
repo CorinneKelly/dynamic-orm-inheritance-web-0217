@@ -11,5 +11,7 @@ sql = <<-SQL
   )
 SQL
 
+# thought it was not dynamic to create tables like this?
+
 DB[:conn].execute(sql)
 DB[:conn].results_as_hash = true
